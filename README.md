@@ -1,10 +1,26 @@
 # infra_sp2
 infra_sp2
 
-#Start
 
+# о чём проект:
+Проект **YaMDb** собирает отзывы пользователей на произведения. 
+Произведения делятся на категории: «Книги», «Фильмы», «Музыка».
+
+# что нужно иметь, чтобы его запустить:
+Guinicorn
+Ngnix
+Docker
+Postgresql
+
+# установка окружения:
+pip install -r requirements.txt
+
+Миграции: python manage.py migrate
+Сборка статики: python manage.py dumpdata > fixtures.json
+Создание админа: python manage.py createsuperuser
+
+# как запустить и как увидеть, что проект работает:
 docker-compose up
 
-#Create superuser
-
-docker-compose run web python manage.py createsuperuser
+# коротко об авторе
+My GitHub: https://github.com/JohnTamarych
