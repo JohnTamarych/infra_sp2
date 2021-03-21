@@ -1,9 +1,8 @@
 FROM python:3.8.5
 
 WORKDIR /code
-RUN mkdir /code
-COPY . /code
-# COPY requirements.txt /code
+RUN mkdir
+COPY . .
 RUN pip install -r /code/requirements.txt
 
 

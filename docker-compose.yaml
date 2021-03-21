@@ -12,7 +12,6 @@ services:
       - ./.env
   web:
     build: .
-    # image: temana/yamdb_test:v1.11.1111
     restart: always
     ports:
       - "8000:8000"
